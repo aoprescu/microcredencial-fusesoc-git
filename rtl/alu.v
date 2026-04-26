@@ -1,5 +1,6 @@
 // ============================================================
 // alu.v — Unidad Aritmético-Lógica (16 bits)
+// alu.v — Unidad Aritmético-Lógica (con desplazamiento)
 // ============================================================
 `include "../config/parameters.vh"
 

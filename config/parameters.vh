@@ -18,6 +18,8 @@
 `define OP_OR           3'b011    // OR bit a bit
 `define OP_XOR          3'b100    // XOR bit a bit
 `define OP_NOT          3'b101    // NOT (solo operando A)
+`define OP_SHL          3'b110    // Desplazamiento izquierda
+`define OP_SHR          3'b111    // Desplazamiento derecha
 
 // --- Registro de resultado (línea 22) ---
 `define REG_RESET_VAL   8'h00     // Valor de reset del registro

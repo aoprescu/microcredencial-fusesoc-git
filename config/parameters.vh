@@ -8,7 +8,8 @@
 `define PARAMETERS_VH
 
 // --- Anchura de datos (línea 11) ---
-`define DATA_WIDTH      8
+`define DATA_WIDTH      16
+`define DATA_WIDTH_PREV 8    // anchura anterior, para referencia en el código
 
 // --- Códigos de operación (líneas 14-19) ---
 `define OP_ADD          3'b000    // Suma

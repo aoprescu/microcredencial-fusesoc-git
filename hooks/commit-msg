@@ -1,0 +1,11 @@
+#!/bin/sh
+MSG=$(cat "$1")
+if ! echo "$MSG" | grep -qE "^(feat|fix|docs|test|refactor|chore|style)(\(.+\))?: .{5,}"; then
+  echo ""
+  echo "  ERROR: El mensaje no sigue Conventional Commits."
+  echo "  Formato: <tipo>(<ámbito>): <descripción>"
+  echo "  Tipos válidos: feat, fix, docs, test, refactor, chore, style"
+  echo "  Ejemplo: feat(alu): añadir operación de desplazamiento"
+  echo ""
+  exit 1
+fi
